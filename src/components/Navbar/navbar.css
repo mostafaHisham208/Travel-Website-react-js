@@ -1,0 +1,121 @@
+:root {
+  /* ========== colors ======= */
+  --primary-color:hsl(199,100%,33%);
+  --secondary-color:hsl(187,85%,43%);
+  --gradient-color:linear-gradient(to right,hsl(187,85%,43%),hsl(199,100%,33%));
+  --white-color:hsl(0,0%,100%);
+  --black-color:hsl(201,33%,16%);
+  --text-color:hsl(240,4%,36%);
+  --white-color-Deam:hsl(0,0%,92%);
+  --gray-text:rgb(190,190,190);
+  --input-color:rgb(239,239,239);
+  --body-color:rgb(240,240,246);
+  --card-bg:rgb(225,255,235);
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--white-color-Deam);
+  width: 100%;
+  padding: 1rem;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(2, 15, 29, 0.9);
+}
+.header .navbar {
+  width: 60%;
+}
+.header .navbar .closenavbar {
+  display: none;
+}
+.header .togglenavbar {
+  display: none;
+}
+.header .navlists {
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0.5rem 1rem;
+}
+.header .logo {
+  color: var(--black-color);
+  padding-left: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.header .logo .icon {
+  font-size: 25px;
+  color: var(--primary-color);
+  transform: translateY(5px);
+}
+@media screen and (max-width: 768px) {
+  .header .navbar {
+    display: none;
+    position: absolute;
+    background: var(--white-color-Deam);
+    height: -moz-max-content;
+    height: max-content;
+    width: 80%;
+    border-radius: 1rem;
+    padding: 1rem;
+    top: 6rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2000;
+    box-shadow: 0 2px 4px rgba(2, 15, 29, 0.9);
+    transition: 0.3s ease-in-out;
+  }
+  .header .closenavbar {
+    display: block !important;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    color: var(--primary-color);
+  }
+  .header .closenavbar:hover {
+    color: var(--secondary-color);
+  }
+  .header .activenavbar {
+    display: flex;
+  }
+  .header .navlists {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    padding: 0.5rem 0;
+  }
+  .header .navitem {
+    padding: 0.5rem 0;
+  }
+  .header .navitem .navlink {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .header .navitem .navlink:hover {
+    color: var(--primary-color);
+  }
+  .header .btn {
+    margin-top: 1rem;
+  }
+  .header .btn a {
+    font-weight: 600;
+    color: var(--white-color);
+  }
+  .header .togglenavbar {
+    display: block;
+  }
+  .header .togglenavbar .icon {
+    font-size: 25px;
+    color: var(--primary-color);
+    padding-right: 0.5rem;
+  }
+  .header .togglenavbar:hover.icon {
+    color: var(--secondary-color);
+  }
+}/*# sourceMappingURL=navbar.css.map */
