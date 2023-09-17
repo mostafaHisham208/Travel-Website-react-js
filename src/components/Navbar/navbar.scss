@@ -10,7 +10,7 @@
     --gray-text:rgb(190,190,190);
     --input-color:rgb(239,239,239);
     --body-color:rgb(240,240,246);
-    --card-bg:rgb(225,255,235);
+    --card-bg:rgb(225,225,235);
   
 }  
 .header{
@@ -25,16 +25,7 @@
     box-shadow: 0 2px 4px rgba(2,15,29,0.9);
 
  
-
-    .navbar{
-        width: 60%;
-        .closenavbar{
-            display: none;
-        }
-    }
-    .togglenavbar{
-        display: none;
-    }
+ 
     .navlists{
 
         justify-content: space-between;
@@ -130,3 +121,70 @@
   
  
 }
+
+
+@media screen and (min-width: 769px) {
+    .togglenavbar,.closenavbar{
+        display: none;
+    }
+
+    .header{
+        padding: 1.5rem 2rem;
+
+        .navbar{
+            .navlists{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+
+                .navitem{
+                    .navlink{
+                        color: var(--text-color);
+                        padding: 0 0.45rem;
+                        font-size: 0.9rem;
+                        font-weight: 500 ;
+
+                        &:hover{
+                            color: var(--primary-color);
+                        }
+
+
+                    }
+                }
+
+                .btn{
+                    margin-left: 1rem;
+                    a{
+                        color: var(--white-color);
+                    }
+                }
+            }
+        }
+    }
+
+    
+}
+
+
+@media screen and (min-width:960px){
+    
+   .header{
+      .navbar{
+        .navlists{
+            .navitem{
+                padding: 0 0.7rem;
+            }
+        }
+      }
+   } 
+}
+
+
+@media screen and (min-width:1240px){
+    
+    .header{
+      padding: 1rem 8.5rem;
+    } 
+ }
+ 

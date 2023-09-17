@@ -43,6 +43,10 @@ body {
 
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 a{
   text-decoration: none;
 }
@@ -83,7 +87,7 @@ li{
 }
 
 .section{
-  padding: 4rem 0 2rem;
+  padding: 4rem  1.2rem !important;
 }
 
 .btn{
@@ -110,4 +114,25 @@ input{
 }
 body{
   background-color: var(--body-color);
+}
+
+
+
+@media screen and (min-width:1240px) {
+  .container{
+    width: 80% !important;
+    margin: auto !important;
+  }  
+
+  .section{
+    padding:  6rem 0  4rem;
+  }
+}
+
+
+@media screen and (min-width:2560px){
+  
+  body{
+    zoom: 1.7;
+  }
 }

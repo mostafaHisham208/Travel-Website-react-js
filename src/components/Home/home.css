@@ -1,16 +1,16 @@
 :root {
   /* ========== colors ======= */
-  --primary-color:hsl(199,100%,33%);
-  --secondary-color:hsl(187,85%,43%);
-  --gradient-color:linear-gradient(to right,hsl(187,85%,43%),hsl(199,100%,33%));
-  --white-color:hsl(0,0%,100%);
-  --black-color:hsl(201,33%,16%);
-  --text-color:hsl(240,4%,36%);
-  --white-color-Deam:hsl(0,0%,92%);
-  --gray-text:rgb(190,190,190);
-  --input-color:rgb(239,239,239);
-  --body-color:rgb(240,240,246);
-  --card-bg:rgb(225,255,235);
+  --primary-color: hsl(199, 100%, 33%);
+  --secondary-color: hsl(187, 85%, 43%);
+  --gradient-color: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --white-color: hsl(0, 0%, 100%);
+  --black-color: hsl(201, 33%, 16%);
+  --text-color: hsl(240, 4%, 36%);
+  --white-color-Deam: hsl(0, 0%, 92%);
+  --gray-text: rgb(190, 190, 190);
+  --input-color: rgb(239, 239, 239);
+  --body-color: rgb(240, 240, 246);
+  --card-bg: rgb(225, 225, 235);
 }
 
 .home {
@@ -21,8 +21,7 @@
   justify-content: center;
   margin: auto;
 }
-
-.overlay {
+.home .overlay {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -32,8 +31,7 @@
   z-index: 1;
   mix-blend-mode: hard-light;
 }
-
-video {
+.home video {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -42,8 +40,7 @@ video {
   -o-object-fit: cover;
      object-fit: cover;
 }
-
-.homecontent {
+.home .homecontent {
   width: 100%;
   height: -moz-max-content;
   height: max-content;
@@ -57,48 +54,48 @@ video {
   color: var(--white-color);
   z-index: 100;
 }
-.homecontent .textdiv {
+.home .homecontent .textdiv {
   padding: 2rem 0;
 }
-.homecontent .textdiv .samlltext {
+.home .homecontent .textdiv .samlltext {
   font-size: 13px;
   text-transform: uppercase;
 }
-.homecontent .textdiv .hometitle {
+.home .homecontent .textdiv .hometitle {
   position: relative;
   font-size: 1.8rem;
   margin: 0;
 }
-.homecontent .carddiv {
+.home .homecontent .carddiv {
   position: relative;
   padding: 2rem 1rem;
   background: var(--white-color);
   border-radius: 10px;
   gap: 1rem;
 }
-.homecontent .carddiv label {
+.home .homecontent .carddiv label {
   display: block;
   color: var(--text-color);
   padding-bottom: 10px;
   font-size: 13px;
   font-weight: 500;
 }
-.homecontent .carddiv .label_total {
+.home .homecontent .carddiv .label_total {
   justify-content: space-between;
   align-items: center;
 }
-.homecontent .carddiv .label_total .total {
+.home .homecontent .carddiv .label_total .total {
   color: var(--text-color);
   font-size: 18px;
   padding-bottom: 10px;
 }
-.homecontent .carddiv .input {
+.home .homecontent .carddiv .input {
   height: 40px;
   padding: 0 1rem;
   background: var(--input-color);
   border-radius: 3rem;
 }
-.homecontent .carddiv .input input {
+.home .homecontent .carddiv .input input {
   background: none;
   border: none;
   outline: none;
@@ -106,21 +103,21 @@ video {
   font-size: 13px;
   font-weight: 500;
 }
-.homecontent .carddiv .input input::-moz-placeholder {
+.home .homecontent .carddiv .input input::-moz-placeholder {
   font-size: 13px;
 }
-.homecontent .carddiv .input input::placeholder {
+.home .homecontent .carddiv .input input::placeholder {
   font-size: 13px;
 }
-.homecontent .carddiv .input .icon {
+.home .homecontent .carddiv .input .icon {
   font-size: 18px;
   color: var(--primary-color) !important;
   margin-left: 10px;
 }
-.homecontent .carddiv .input .input[type=range] {
+.home .homecontent .carddiv .input .input[type=range] {
   background: blue;
 }
-.homecontent .carddiv .searchoptions {
+.home .homecontent .carddiv .searchoptions {
   position: absolute;
   background: var(--gradient-color);
   width: -moz-max-content;
@@ -135,19 +132,68 @@ video {
   justify-content: center;
   cursor: pointer;
 }
-.homecontent .carddiv .searchoptions:hover {
+.home .homecontent .carddiv .searchoptions:hover {
   background: var(--primary-color);
 }
-.homecontent .homefootericons {
+.home .homecontent .homefootericons {
   width: 100%;
   justify-content: space-between;
 }
-.homecontent .homefootericons .icon {
+.home .homecontent .homefootericons .icon {
   font-size: 20px;
   margin: 0 5px;
   color: var(--white-color);
   font-weight: 600;
 }
-.homecontent .homefootericons .icon:hover {
+.home .homecontent .homefootericons .icon:hover {
   color: var(--primary-color);
+}
+
+@media screen and (min-width: 500px) {
+  .home .homecontent .textdiv .smalltext {
+    font-size: 16px;
+  }
+  .home .homecontent .textdiv .hometitle {
+    position: relative;
+    font-size: 2.3rem;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .home .homecontent .textdiv .hometitle::after {
+    position: absolute;
+    content: "";
+    background: var(--secondary-color);
+    height: 5px;
+    width: 137px;
+    right: 0px;
+    bottom: 5px;
+    z-index: -1;
+  }
+  .home .homecontent .carddiv {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 660px) {
+  .home .homecontent .carddiv {
+    padding: 2rem 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 940px) {
+  .home {
+    height: 85vh;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .home {
+    height: 85vh;
+  }
+  .home .homecontent {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .home .homecontent .carddiv {
+    padding: 2rem 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }/*# sourceMappingURL=home.css.map */

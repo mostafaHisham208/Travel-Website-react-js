@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import videeo from "../../assets/ocean_-_65560 (540p).mp4";
 import "./home.css";
 import { GrLocation } from "react-icons/gr";
@@ -10,20 +10,26 @@ import { BsListTask } from "react-icons/bs";
 import { TbApps } from "react-icons/tb";
 
 
- 
+import Aos from 'aos'
+import 'aos/dist/aos.css' 
 
 
 const Home = () => {
+  
+  useEffect(()=>{
+    Aos.init({duration:2000})
+  },[])
+
   return (
     <section className="home" id="home">
       <div className="overlay"></div>
       <video src={videeo} muted autoPlay loop type="video/mp4"></video>
       <div className="homecontent container">
         <div className="textdiv">
-          <span className="smalltext">our packages</span>
-          <h1 className="hometitle">search your holiday</h1>
+          <span data-aos="fade-up" className="smalltext">our packages</span>
+          <h1 data-aos="fade-up" className="hometitle">Search your Holiday</h1>
         </div>
-        <div className="carddiv grid">
+        <div data-aos="fade-up" className="carddiv grid">
           <div className="destinationinput">
             <label htmlFor="city">search your destination:</label>
             <div className="input flex">
@@ -52,7 +58,7 @@ const Home = () => {
             <span>more filters</span>
           </div>
         </div>
-        <div className="homefootericons flex">
+        <div  data-aos="fade-up" className="homefootericons flex">
           <div className="righticons">
              <FiFacebook  className="icon"/>
              <AiOutlineInstagram  className="icon"/>
