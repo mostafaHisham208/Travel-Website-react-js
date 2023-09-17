@@ -1,5 +1,5 @@
 import React,{useEffect} from "react";
-import videeo from "../../assets/ocean_-_65560 (540p).mp4";
+import videeo from "../../assets/splash_-_23011 (1080p).mp4";
 import "./home.css";
 import { GrLocation } from "react-icons/gr";
 import { HiFilter } from "react-icons/hi";

@@ -6,6 +6,10 @@ import img3 from "../../assets/GreatBarrierReef.jpg";
 import img4 from "../../assets/Cappadocia.jpg";
 import img5 from "../../assets/Guanajuato.jpg";
 import img6 from "../../assets/CinqueTerre.jpg";
+import img7 from "../../assets/image8.jpg";
+import img8 from "../../assets/image12.jpeg";
+import img9 from "../../assets/img9.jpg";
+
 import {HiOutlineLocationMarker} from 'react-icons/hi' 
 import {BsClipboard2Check} from 'react-icons/bs' 
 
@@ -74,6 +78,36 @@ const Data = [
     description:
       "The epitome of remance, Bora Bora is one of the best  travel destinations in the world. this place is known for its luxurious stays and adventurous activities.",
   },
+  {
+    id: 7,
+    imgsrc: img7,
+    desttitle: "Copa Capana",
+    location: "Greeks",
+    grade: "CUL TRUAL RELAX",
+    fees: "$900",
+    description:
+      "The epitome of remance, Bora Bora is one of the best  travel destinations in the world. this place is known for its luxurious stays and adventurous activities.",
+  },
+  {
+    id: 8,
+    imgsrc: img8,
+    desttitle: "Maldivee",
+    location: "Tilland",
+    grade: "CUL TRUAL RELAX",
+    fees: "$1200",
+    description:
+      "The epitome of remance, Bora Bora is one of the best  travel destinations in the world. this place is known for its luxurious stays and adventurous activities.",
+  },
+  {
+    id: 9,
+    imgsrc: img9,
+    desttitle: "Tahiti Mt Otemanu",
+    location: "New Zealand",
+    grade: "CUL TRUAL RELAX",
+    fees: "$650",
+    description:
+      "The epitome of remance, Bora Bora is one of the best  travel destinations in the world. this place is known for its luxurious stays and adventurous activities.",
+  }
 ];
 
 const Main = () => {
