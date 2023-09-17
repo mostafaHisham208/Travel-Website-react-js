@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Travel-Website-react-js/static/css/main.22271730.css",
+    "main.js": "/Travel-Website-react-js/static/js/main.e5ee3b1c.js",
+    "static/media/CinqueTerre.jpg": "/Travel-Website-react-js/static/media/CinqueTerre.a80ff53fc3e0953f9318.jpg",
+    "static/media/ocean_-_65560 (540p).mp4": "/Travel-Website-react-js/static/media/ocean_-_65560 (540p).1763eeb63dcedd1911fc.mp4",
+    "static/media/Cappadocia.jpg": "/Travel-Website-react-js/static/media/Cappadocia.e90a79a40b1ed7f06cd7.jpg",
+    "static/media/Bara.jpg": "/Travel-Website-react-js/static/media/Bara.237b6c484b2e687a2f88.jpg",
+    "static/media/Guanajuato.jpg": "/Travel-Website-react-js/static/media/Guanajuato.1c44c0275b8f611de3c7.jpg",
+    "static/media/MachuPicchu.jpg": "/Travel-Website-react-js/static/media/MachuPicchu.cf83716070b30adace6b.jpg",
+    "static/media/GreatBarrierReef.jpg": "/Travel-Website-react-js/static/media/GreatBarrierReef.1ea3ce098e7ae9b77ff1.jpg",
+    "index.html": "/Travel-Website-react-js/index.html",
+    "main.22271730.css.map": "/Travel-Website-react-js/static/css/main.22271730.css.map",
+    "main.e5ee3b1c.js.map": "/Travel-Website-react-js/static/js/main.e5ee3b1c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.22271730.css",
+    "static/js/main.e5ee3b1c.js"
+  ]
+}
